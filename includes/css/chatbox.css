@@ -1,0 +1,225 @@
+/* ===== Chatbox Container ===== */
+/* Hidden by default; shown as flex column when .open is added */
+#chatbox {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    z-index: 1000;
+    display: none;
+    flex-direction: column;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#chatbox.open {
+    display: flex;
+}
+
+/* ===== Chat Header ===== */
+#chat-header {
+    background: #4a90e2;
+    color: white;
+    padding: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#chat-close {
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#chat-close:hover {
+    background: rgba(255, 255, 255, 0.35);
+}
+
+/* ===== Messages Area ===== */
+#chat-messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    background: #f9f9f9;
+}
+
+/* Thin custom scrollbar inside messages area */
+#chat-messages::-webkit-scrollbar {
+    width: 6px;
+}
+
+#chat-messages::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 6px;
+}
+
+/* ===== Message Bubbles ===== */
+.chat-message {
+    margin-bottom: 10px;
+}
+
+.chat-message .message-bubble {
+    padding: 10px 14px;
+    border-radius: 18px;
+    display: inline-block;
+    max-width: 80%;
+    font-size: 14px;
+}
+
+/* User bubble: right-aligned, blue background */
+.chat-message.user {
+    text-align: right;
+}
+
+.chat-message.user .message-bubble {
+    background: #4a90e2;
+    color: white;
+}
+
+/* AI bubble: left-aligned, light grey background */
+.chat-message.ai .message-bubble {
+    background: #f2f2f2;
+    color: #333;
+    border: 1px solid #e0e0e0;
+}
+
+/* ===== Typing Indicator ===== */
+/* Hidden until .active is added; shows animated bouncing dots */
+#typing-indicator {
+    display: none;
+    padding: 10px 15px;
+}
+
+#typing-indicator.active {
+    display: block;
+}
+
+#typing-indicator span {
+    width: 7px;
+    height: 7px;
+    background: #4a90e2;
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: typing 1.3s infinite;
+}
+
+/* Staggered bounce delays for each dot */
+#typing-indicator span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+#typing-indicator span:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typing {
+
+    0%,
+    60%,
+    100% {
+        transform: translateY(0);
+    }
+
+    30% {
+        transform: translateY(-8px);
+    }
+}
+
+/* ===== Input Area ===== */
+#chat-input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #e0e0e0;
+    background: #ffffff;
+}
+
+#chat-input {
+    flex: 1;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    padding: 8px 14px;
+    font-size: 14px;
+    outline: none;
+}
+
+#chat-input:focus {
+    border-color: #4a90e2;
+}
+
+#chat-send-btn {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: none;
+    margin-left: 8px;
+    background: #4a90e2;
+    color: white;
+    cursor: pointer;
+}
+
+#chat-send-btn:hover {
+    background: #357ab7;
+}
+
+/* ===== Floating Toggle Button ===== */
+#chat-toggle-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+#chat-toggle-btn:hover {
+    transform: scale(1.08);
+}
+
+/* ===== Suggestion Chips ===== */
+#chat-suggestions {
+    padding: 10px 15px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.suggestion-chip {
+    display: inline-block;
+    background: #e8f0fe;
+    color: #4a90e2;
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 12px;
+    margin: 3px;
+    cursor: pointer;
+}
+
+.suggestion-chip:hover {
+    background: #d0e2ff;
+}
+
+/* ===== Responsive: Mobile ===== */
+@media (max-width: 480px) {
+    #chatbox {
+        width: 95%;
+        right: 10px;
+        bottom: 80px;
+    }
+}
