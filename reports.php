@@ -883,6 +883,76 @@ if ($course_id && is_numeric($course_id)) {
             display: none !important;
         }
     }
+
+/* ══════════════════════════════════════
+   DARK MODE - Same as Dashboard
+══════════════════════════════════════ */
+[data-theme="dark"] .rp-top-title { color: #e2e8f0; }
+[data-theme="dark"] .rp-top-sub { color: #94a3b8; }
+[data-theme="dark"] .rp-date-pill { background: #1e293b; border-color: #334155; color: #94a3b8; }
+
+[data-theme="dark"] .rp-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .rp-card-head { background: linear-gradient(135deg, #1e293b, #0f172a); }
+
+[data-theme="dark"] .rp-label { color: #e2e8f0; }
+[data-theme="dark"] .rp-select, [data-theme="dark"] .rp-input { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .rp-select:focus, [data-theme="dark"] .rp-input:focus { border-color: #1456c8; }
+[data-theme="dark"] .rp-divider { background: #334155; }
+[data-theme="dark"] .rp-hint { color: #64748b; }
+
+[data-theme="dark"] .rp-course-preview { background: #0f172a; border-color: #334155; }
+[data-theme="dark"] .rp-course-preview-code { color: #93c5fd; }
+[data-theme="dark"] .rp-course-preview-name { color: #e2e8f0; }
+
+[data-theme="dark"] .rp-analytics-head { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .rp-analytics-head h5 { color: #e2e8f0; }
+[data-theme="dark"] .rp-course-badge { background: #0f172a; border-color: #334155; color: #93c5fd; }
+
+[data-theme="dark"] .rp-stat { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .rp-stat-num { color: #e2e8f0; }
+[data-theme="dark"] .rp-stat-lbl { color: #64748b; }
+[data-theme="dark"] .rp-stat.green .rp-stat-icon { background: #052e16; color: #6ee7b7; }
+[data-theme="dark"] .rp-stat.red .rp-stat-icon { background: #3f0a0a; color: #fca5a5; }
+[data-theme="dark"] .rp-stat.amber .rp-stat-icon { background: #1c1003; color: #fcd34d; }
+[data-theme="dark"] .rp-stat.blue .rp-stat-icon { background: #0f172a; color: #93c5fd; }
+
+[data-theme="dark"] .rp-rate-arc circle.track { stroke: #334155; }
+[data-theme="dark"] .rp-rate-val { color: #e2e8f0; }
+
+[data-theme="dark"] .rp-bar-lbl { color: #e2e8f0; }
+[data-theme="dark"] .rp-bar-val { color: #64748b; }
+[data-theme="dark"] .rp-bar-track { background: #334155; }
+
+[data-theme="dark"] .rp-tbl-wrap { border-color: #334155; }
+[data-theme="dark"] .rp-tbl-head-row { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .rp-tbl-head-row h6 { color: #e2e8f0; }
+
+[data-theme="dark"] .rp-search-input { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .rp-search-input:focus { border-color: #1456c8; }
+[data-theme="dark"] .rp-search-input::placeholder { color: #475569; }
+
+[data-theme="dark"] .rp-tbl thead tr { background: #0f172a; }
+[data-theme="dark"] .rp-tbl thead th { background: #0f172a; color: #64748b; border-color: #334155; }
+[data-theme="dark"] .rp-tbl tbody tr { border-color: #334155; }
+[data-theme="dark"] .rp-tbl tbody tr:hover { background: #273549; }
+[data-theme="dark"] .rp-tbl td { color: #cbd5e1; }
+
+[data-theme="dark"] .rp-av { border-color: #334155; }
+[data-theme="dark"] .rp-sname { color: #e2e8f0; }
+
+[data-theme="dark"] .rp-badge.present { background: #052e16; color: #6ee7b7; }
+[data-theme="dark"] .rp-badge.present .rp-badge-dot { background: #059669; }
+[data-theme="dark"] .rp-badge.absent { background: #3f0a0a; color: #fca5a5; }
+[data-theme="dark"] .rp-badge.absent .rp-badge-dot { background: #dc2626; }
+[data-theme="dark"] .rp-badge.late { background: #1c1003; color: #fcd34d; }
+[data-theme="dark"] .rp-badge.late .rp-badge-dot { background: #d97706; }
+[data-theme="dark"] .rp-date-txt { color: #64748b; }
+
+[data-theme="dark"] .rp-placeholder { color: #64748b; }
+[data-theme="dark"] .rp-placeholder h6 { color: #64748b; }
+[data-theme="dark"] .rp-no-results { color: #64748b; }
+
+[data-theme="dark"] .table-responsive::-webkit-scrollbar-thumb { background: #334155; }
 </style>
 
 

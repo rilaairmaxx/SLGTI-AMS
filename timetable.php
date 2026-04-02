@@ -263,6 +263,69 @@ $filterDay  = $_GET['day']  ?? 'all';
 .tt-m-row { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
 .tt-m-save { width:100%; background:linear-gradient(135deg,var(--mid),var(--royal)); color:#fff; border:none; border-radius:11px; padding:12px; font-size:.9rem; font-weight:700; font-family:inherit; cursor:pointer; display:flex; align-items:center; justify-content:center; gap:8px; box-shadow:0 4px 16px rgba(10,45,110,.25); transition:transform .2s; margin-top:4px; }
 .tt-m-save:hover { transform:translateY(-2px); }
+
+/* ══════════════════════════════════════
+   DARK MODE - Same as Dashboard
+══════════════════════════════════════ */
+[data-theme="dark"] .tt-top-title { color: #e2e8f0; }
+[data-theme="dark"] .tt-top-sub { color: #94a3b8; }
+[data-theme="dark"] .tt-date-pill { background: #1e293b; border-color: #334155; color: #94a3b8; }
+[data-theme="dark"] .tt-add-btn { background: linear-gradient(135deg, #1e293b, #0f172a); border-color: #334155; }
+
+[data-theme="dark"] .tt-filter-bar { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .tt-filter-label { color: #94a3b8; }
+[data-theme="dark"] .tt-filter-select { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+
+[data-theme="dark"] .tt-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .tt-card-head { background: linear-gradient(135deg, #1e293b, #0f172a); }
+[data-theme="dark"] .tt-card-head h5 { color: #fff; }
+
+[data-theme="dark"] .tt-grid thead tr { background: #0f172a; }
+[data-theme="dark"] .tt-grid thead th { background: #0f172a; color: #64748b; border-color: #334155; }
+[data-theme="dark"] .tt-grid tbody tr { border-color: #334155; }
+[data-theme="dark"] .tt-grid tbody tr:hover { background: #273549; }
+[data-theme="dark"] .tt-grid td { color: #cbd5e1; }
+[data-theme="dark"] .tt-grid td:first-child { color: #94a3b8; }
+
+[data-theme="dark"] .tt-slot { background: #0f172a; border-color: #334155; }
+[data-theme="dark"] .tt-slot-code { color: #93c5fd; }
+[data-theme="dark"] .tt-slot-name { color: #e2e8f0; }
+[data-theme="dark"] .tt-slot-time { color: #64748b; }
+[data-theme="dark"] .tt-slot-room { color: #6ee7b7; }
+[data-theme="dark"] .tt-slot-lec { color: #fcd34d; }
+[data-theme="dark"] .tt-slot-btn { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .tt-slot-btn.edit:hover { background: #0f172a; border-color: #1456c8; }
+[data-theme="dark"] .tt-slot-btn.del:hover { background: #3f0a0a; border-color: #dc2626; }
+[data-theme="dark"] .tt-slot-btn.edit i { color: #93c5fd; }
+[data-theme="dark"] .tt-slot-btn.del i { color: #fca5a5; }
+[data-theme="dark"] .tt-empty-cell { color: #475569; }
+[data-theme="dark"] .tt-empty { color: #64748b; }
+
+/* Dept variants dark */
+[data-theme="dark"] .tt-slot.ict { background: #0f172a; border-color: #334155; }
+[data-theme="dark"] .tt-slot.mech { background: #1c1003; border-color: #d97706; }
+[data-theme="dark"] .tt-slot.mech .tt-slot-code { color: #fcd34d; }
+[data-theme="dark"] .tt-slot.mech .tt-slot-name { color: #e2e8f0; }
+[data-theme="dark"] .tt-slot.auto { background: #052e16; border-color: #059669; }
+[data-theme="dark"] .tt-slot.auto .tt-slot-code { color: #6ee7b7; }
+[data-theme="dark"] .tt-slot.auto .tt-slot-name { color: #e2e8f0; }
+[data-theme="dark"] .tt-slot.elec { background: #1e0a3f; border-color: #7c3aed; }
+[data-theme="dark"] .tt-slot.elec .tt-slot-code { color: #c4b5fd; }
+[data-theme="dark"] .tt-slot.elec .tt-slot-name { color: #e2e8f0; }
+[data-theme="dark"] .tt-slot.ft { background: #1c1003; border-color: #d97706; }
+[data-theme="dark"] .tt-slot.con { background: #052e16; border-color: #059669; }
+
+[data-theme="dark"] #ttToast { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] #ttToastTitle { color: #e2e8f0; }
+
+[data-theme="dark"] #ttToastMsg { color: #94a3b8; }
+
+[data-theme="dark"] .tt-modal-backdrop { background: rgba(0,0,0,.7); }
+[data-theme="dark"] .tt-modal { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .tt-modal-head { background: linear-gradient(135deg, #1e293b, #0f172a); }
+[data-theme="dark"] .tt-m-label { color: #e2e8f0; }
+[data-theme="dark"] .tt-m-input, [data-theme="dark"] .tt-m-select { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .tt-m-input:focus, [data-theme="dark"] .tt-m-select:focus { border-color: #1456c8; }
 </style>
 
 <!-- ══ PAGE HEADER ══ -->

@@ -883,6 +883,61 @@ if ($role === 'admin') {
             grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
         }
     }
+
+    [data-theme="dark"] .pp-top-title { color:#e2e8f0; }
+    [data-theme="dark"] .pp-top-sub { color:#94a3b8; }
+    [data-theme="dark"] .pp-back-btn { background:#1e293b;color:#94a3b8;border-color:#334155; }
+    [data-theme="dark"] .pp-back-btn:hover { border-color:#1456c8;color:#1456c8; }
+    [data-theme="dark"] .pp-card { background:#1e293b;border-color:#334155;box-shadow:0 4px 24px rgba(0,0,0,.3); }
+    [data-theme="dark"] .pp-card-body { background:#1e293b; }
+    [data-theme="dark"] .pp-display-name { color:#e2e8f0; }
+    [data-theme="dark"] .pp-display-sub { color:#94a3b8; }
+    [data-theme="dark"] .pp-avatar { border-color:#334155; }
+    [data-theme="dark"] .pp-avatar-fallback { border-color:#334155; }
+    [data-theme="dark"] .pp-role-pill.admin { background:rgba(220,38,38,.15);color:#fca5a5; }
+    [data-theme="dark"] .pp-role-pill.lecturer { background:rgba(20,86,200,.15);color:#93c5fd; }
+    [data-theme="dark"] .pp-role-pill.student { background:rgba(5,150,105,.15);color:#6ee7b7; }
+    [data-theme="dark"] .pp-drop-zone { border-color:#334155;background:#0f172a;color:#94a3b8; }
+    [data-theme="dark"] .pp-drop-zone:hover { border-color:#1456c8;background:linear-gradient(135deg,#1e293b,#0f172a); }
+    [data-theme="dark"] .pp-drop-icon { background:linear-gradient(135deg,#1e293b,#334155);color:#94a3b8; }
+    [data-theme="dark"] .pp-drop-title { color:#e2e8f0; }
+    [data-theme="dark"] .pp-drop-sub { color:#94a3b8; }
+    [data-theme="dark"] .pp-preview-wrap { border-color:#334155;background:#0f172a; }
+    [data-theme="dark"] .pp-preview-head { background:#1e293b;color:#cbd5e1; }
+    [data-theme="dark"] .pp-preview-name { color:#e2e8f0; }
+    [data-theme="dark"] .pp-progress-track { background:#334155; }
+    [data-theme="dark"] .pp-status.success { background:rgba(5,150,105,.15);color:#6ee7b7;border-color:#059669; }
+    [data-theme="dark"] .pp-status.error { background:rgba(220,38,38,.15);color:#fca5a5;border-color:#dc2626; }
+    [data-theme="dark"] .pp-upload-btn { opacity:.85; }
+    [data-theme="dark"] .pp-cancel-btn { background:#1e293b;color:#94a3b8;border-color:#334155; }
+    [data-theme="dark"] .pp-cancel-btn:hover { background:rgba(220,38,38,.1);border-color:#dc2626;color:#fca5a5; }
+    [data-theme="dark"] .pp-remove-btn { background:#1e293b;color:#fca5a5;border-color:rgba(220,38,38,.3); }
+    [data-theme="dark"] .pp-remove-btn:hover { background:rgba(220,38,38,.1);border-color:#dc2626; }
+    [data-theme="dark"] .pp-rules { background:#0f172a;border-color:#334155; }
+    [data-theme="dark"] .pp-rules-title { color:#cbd5e1; }
+    [data-theme="dark"] .pp-rule-item { color:#94a3b8; }
+    [data-theme="dark"] .adm-tab { background:#1e293b;border-color:#334155;color:#94a3b8; }
+    [data-theme="dark"] .adm-tab:hover { border-color:#1456c8;color:#1456c8; }
+    [data-theme="dark"] .adm-tab.active { background:#1456c8;border-color:#1456c8;color:#fff; }
+    [data-theme="dark"] .adm-search-input { background:#0f172a;border-color:#334155;color:#e2e8f0; }
+    [data-theme="dark"] .adm-search-input:focus { background:#1e293b;border-color:#1456c8; }
+    [data-theme="dark"] .adm-search-input::placeholder { color:#64748b; }
+    [data-theme="dark"] .adm-person-card { background:#1e293b;border-color:#334155; }
+    [data-theme="dark"] .adm-person-card:hover { border-color:#475569;box-shadow:0 8px 24px rgba(0,0,0,.4); }
+    [data-theme="dark"] .adm-av { border-color:#334155; }
+    [data-theme="dark"] .adm-av-fallback { border-color:#334155; }
+    [data-theme="dark"] .adm-av-overlay { background:rgba(0,0,0,.6); }
+    [data-theme="dark"] .adm-person-name { color:#e2e8f0; }
+    [data-theme="dark"] .adm-person-sub { color:#94a3b8; }
+    [data-theme="dark"] .adm-role-pill.admin { background:rgba(220,38,38,.15);color:#fca5a5; }
+    [data-theme="dark"] .adm-role-pill.lecturer { background:rgba(20,86,200,.15);color:#93c5fd; }
+    [data-theme="dark"] .adm-role-pill.student { background:rgba(5,150,105,.15);color:#6ee7b7; }
+    [data-theme="dark"] .adm-upload-lbl { opacity:.85; }
+    [data-theme="dark"] .adm-remove-lbl { background:#1e293b;border-color:rgba(220,38,38,.3);color:#fca5a5; }
+    [data-theme="dark"] .adm-remove-lbl:hover { background:rgba(220,38,38,.1);border-color:#dc2626; }
+    [data-theme="dark"] .adm-toast { background:#1e293b;border-color:#334155; }
+    [data-theme="dark"] .adm-toast.success { background:rgba(5,150,105,.15);color:#6ee7b7;border-color:#059669; }
+    [data-theme="dark"] .adm-toast.error { background:rgba(220,38,38,.15);color:#fca5a5;border-color:#dc2626; }
 </style>
 
 <!-- PAGE HEADER -->

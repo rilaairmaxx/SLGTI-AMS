@@ -134,6 +134,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     margin-top: 4px;
                 }
                 .cp-submit:hover { transform: translateY(-2px); box-shadow: 0 8px 22px rgba(10,45,110,.3); }
+
+                [data-theme="dark"] .cp-label { color:#cbd5e1; }
+                [data-theme="dark"] .cp-hint { color:#94a3b8; }
+                [data-theme="dark"] .lg-pw-wrap .lg-input { background:#1e293b;border-color:#334155;color:#e2e8f0; }
+                [data-theme="dark"] .lg-pw-wrap .lg-input:focus { background:#1e293b;border-color:#1456c8;color:#e2e8f0; }
+                [data-theme="dark"] .lg-pw-wrap .lg-input::placeholder { color:#64748b; }
+                [data-theme="dark"] .lg-pw-wrap i { color:#64748b; }
+                [data-theme="dark"] .lg-pw-wrap i:hover { color:#1456c8; }
                 </style>
 
                 <form method="POST" id="cpForm">

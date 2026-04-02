@@ -103,15 +103,27 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['csv_file'])) {
     .upload-zone:hover { border-color:var(--mid); }
     .csv-hint { background:#f8fafc;border:1px solid #e4eaf3;border-radius:10px;padding:16px 20px;font-size:.82rem;color:var(--muted); }
     .csv-hint code { background:#e4eaf3;padding:2px 6px;border-radius:4px;font-size:.8rem; }
+
+    [data-theme="dark"] .page-icon { background:linear-gradient(135deg,#1e293b,#334155);box-shadow:0 4px 14px rgba(0,0,0,.3); }
+    [data-theme="dark"] .page-title { color:#e2e8f0; }
+    [data-theme="dark"] .page-sub { color:#94a3b8; }
+    [data-theme="dark"] .upload-zone { border-color:#334155;background:#1e293b; }
+    [data-theme="dark"] .csv-hint { background:#1e293b;border-color:#334155;color:#94a3b8; }
+    [data-theme="dark"] .csv-hint code { background:#334155;color:#cbd5e1; }
+    [data-theme="dark"] .btn-outline-secondary { color:#94a3b8;border-color:#334155; }
+    [data-theme="dark"] .btn-outline-secondary:hover { background:#334155;color:#e2e8f0; }
 </style>
 
-<div class="page-top">
-    <div class="page-icon"><i class="fas fa-file-import"></i></div>
-    <div>
-        <p class="page-title">Bulk Student Import</p>
-        <p class="page-sub">Upload a CSV file to add multiple students at once</p>
+    <div class="page-top" style="justify-content:space-between;flex-wrap:wrap;gap:14px;">
+        <div style="display:flex;align-items:center;gap:14px;">
+            <div class="page-icon"><i class="fas fa-file-import"></i></div>
+            <div>
+                <p class="page-title">Bulk Student Import</p>
+                <p class="page-sub">Upload a CSV file to add multiple students at once</p>
+            </div>
+        </div>
     </div>
-</div>
+
 
 <?php if ($msg['text']): ?>
     <div class="alert alert-<?= $msg['type'] ?> alert-dismissible fade show">
