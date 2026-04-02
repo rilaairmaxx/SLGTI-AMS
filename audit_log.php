@@ -176,4 +176,17 @@ $badgeMap = [
 </nav>
 <?php endif; ?>
 
-<?php include "includes/footer.php"; ?>
+    <style>
+    [data-theme="dark"] .badge.bg-secondary { background:#334155!important;color:#e2e8f0!important; }
+    [data-theme="dark"] .form-select,
+    [data-theme="dark"] .form-control { background:#1e293b;border-color:#334155;color:#e2e8f0; }
+    [data-theme="dark"] .form-select:focus,
+    [data-theme="dark"] .form-control:focus { background:#1e293b;border-color:#1456c8;color:#e2e8f0; }
+    [data-theme="dark"] .form-select option { background:#1e293b;color:#e2e8f0; }
+    [data-theme="dark"] .btn-outline-secondary { color:#94a3b8;border-color:#334155;background:transparent; }
+    [data-theme="dark"] .btn-outline-secondary:hover { background:#334155;color:#e2e8f0; }
+    [data-theme="dark"] .pagination .page-link { background:#1e293b;border-color:#334155;color:#cbd5e1; }
+    [data-theme="dark"] .pagination .page-item.active .page-link { background:#1456c8;border-color:#1456c8;color:#fff; }
+    [data-theme="dark"] .pagination .page-link:hover { background:#334155; }
+    </style>
+    <?php include "includes/footer.php"; ?>

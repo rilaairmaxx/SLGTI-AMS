@@ -1070,6 +1070,66 @@ foreach ($course_options as $deptCode) {
             font-size: 1.05rem;
         }
     }
+
+/* ══════════════════════════════════════
+   DARK MODE - Same as Dashboard
+══════════════════════════════════════ */
+[data-theme="dark"] .ac-top-title { color: #e2e8f0; }
+[data-theme="dark"] .ac-top-sub { color: #94a3b8; }
+[data-theme="dark"] .ac-date-pill { background: #1e293b; border-color: #334155; color: #94a3b8; }
+
+[data-theme="dark"] .ac-msg.success { background: #052e16; color: #6ee7b7; border-color: #059669; }
+[data-theme="dark"] .ac-msg.warning { background: #1c1003; color: #fcd34d; border-color: #d97706; }
+[data-theme="dark"] .ac-msg.danger { background: #3f0a0a; color: #fca5a5; border-color: #dc2626; }
+
+[data-theme="dark"] .ac-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .ac-card-head { background: linear-gradient(135deg, #1e293b, #0f172a); }
+[data-theme="dark"] .ac-edit-banner { background: #1c1003; border-color: #d97706; color: #fcd34d; }
+
+[data-theme="dark"] .ac-label { color: #e2e8f0; }
+[data-theme="dark"] .ac-input, [data-theme="dark"] .ac-select, [data-theme="dark"] .ac-textarea { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .ac-input:focus, [data-theme="dark"] .ac-select:focus, [data-theme="dark"] .ac-textarea:focus { border-color: #1456c8; }
+[data-theme="dark"] .ac-input::placeholder, [data-theme="dark"] .ac-textarea::placeholder { color: #475569; }
+[data-theme="dark"] .ac-input.is-invalid, [data-theme="dark"] .ac-select.is-invalid, [data-theme="dark"] .ac-textarea.is-invalid { background: #1e0a0a; border-color: #dc2626; }
+[data-theme="dark"] .ac-input.is-valid, [data-theme="dark"] .ac-select.is-valid, [data-theme="dark"] .ac-textarea.is-valid { background: #052e16; border-color: #059669; }
+[data-theme="dark"] .ac-char-count { color: #64748b; }
+[data-theme="dark"] .ac-divider { background: #334155; }
+[data-theme="dark"] .ac-hint { color: #64748b; }
+[data-theme="dark"] .ac-no-lec { background: #3f0a0a; border-color: #991b1b; color: #fca5a5; }
+
+[data-theme="dark"] .ac-code-preview { background: #0f172a; border-color: #334155; color: #93c5fd; }
+[data-theme="dark"] .ac-field-error { background: #3f0a0a; border-color: #dc2626; color: #fca5a5; }
+
+[data-theme="dark"] .ac-tbl-head { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .ac-tbl-head h5 { color: #e2e8f0; }
+[data-theme="dark"] .ac-tbl thead tr { background: #0f172a; }
+[data-theme="dark"] .ac-tbl thead th { background: #0f172a; color: #64748b; border-color: #334155; }
+[data-theme="dark"] .ac-tbl tbody tr { border-color: #334155; }
+[data-theme="dark"] .ac-tbl tbody tr:hover { background: #273549; }
+[data-theme="dark"] .ac-tbl tbody tr.editing-row { background: #0f172a; border-left-color: #1456c8; }
+[data-theme="dark"] .ac-tbl td { color: #cbd5e1; }
+
+[data-theme="dark"] .ac-code { background: #0f172a; border-color: #334155; color: #93c5fd; }
+[data-theme="dark"] .ac-cname { color: #e2e8f0; }
+[data-theme="dark"] .ac-desc { color: #64748b; }
+[data-theme="dark"] .ac-no-desc { color: #475569; }
+[data-theme="dark"] .ac-lec { color: #e2e8f0; }
+[data-theme="dark"] .ac-lec-av { background: #0f172a; color: #93c5fd; }
+[data-theme="dark"] .ac-no-lec-cell { color: #fca5a5; }
+
+[data-theme="dark"] .ac-badge.active { background: #052e16; color: #6ee7b7; }
+[data-theme="dark"] .ac-badge.active .ac-badge-dot { background: #059669; }
+[data-theme="dark"] .ac-badge.inactive { background: #1e293b; color: #64748b; }
+[data-theme="dark"] .ac-badge.inactive .ac-badge-dot { background: #64748b; }
+
+[data-theme="dark"] .ac-act-btn { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .ac-act-btn.edit:hover { background: #0f172a; border-color: #1456c8; color: #93c5fd; }
+[data-theme="dark"] .ac-act-btn.del:hover { background: #3f0a0a; border-color: #dc2626; color: #fca5a5; }
+[data-theme="dark"] .ac-act-btn .fa-edit { color: #93c5fd; }
+[data-theme="dark"] .ac-act-btn .fa-trash { color: #fca5a5; }
+
+[data-theme="dark"] .ac-empty { color: #64748b; }
+[data-theme="dark"] .table-responsive::-webkit-scrollbar-thumb { background: #334155; }
 </style>
 
 

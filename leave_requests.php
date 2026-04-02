@@ -237,4 +237,13 @@ $statusBadge = ['pending' => 'warning', 'approved' => 'success', 'rejected' => '
     </div>
 </div>
 
+    <style>
+    [data-theme="dark"] .form-label { color:#cbd5e1; }
+    [data-theme="dark"] .form-select,
+    [data-theme="dark"] .form-control { background:#1e293b;border-color:#334155;color:#e2e8f0; }
+    [data-theme="dark"] .form-select:focus,
+    [data-theme="dark"] .form-control:focus { background:#1e293b;border-color:#1456c8;color:#e2e8f0; }
+    [data-theme="dark"] .form-select option { background:#1e293b;color:#e2e8f0; }
+    [data-theme="dark"] textarea.form-control { background:#1e293b;border-color:#334155;color:#e2e8f0; }
+    </style>
 <?php include "includes/footer.php"; ?>

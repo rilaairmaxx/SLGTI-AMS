@@ -1,9 +1,3 @@
-<?php
-if (session_status() === PHP_SESSION_NONE) {
-    session_start();
-}
-?>
-
 <link rel="stylesheet" href="includes/css/chatbox.css">
 
 <button id="chat-toggle-btn" title="Open AI Assistant">
@@ -22,7 +16,6 @@ if (session_status() === PHP_SESSION_NONE) {
         <button id="chat-close">&times;</button>
     </div>
 
-    <!-- Quick-tap suggestion chips for common questions -->
     <div id="chat-suggestions">
         <?php
         $role = $_SESSION['role'] ?? 'student';
@@ -48,10 +41,8 @@ if (session_status() === PHP_SESSION_NONE) {
         ?>
     </div>
 
-    <!-- Chat messages appear here dynamically -->
     <div id="chat-messages"></div>
 
-    <!-- Animated dots shown while AI is responding -->
     <div id="typing-indicator">
         <span></span>
         <span></span>

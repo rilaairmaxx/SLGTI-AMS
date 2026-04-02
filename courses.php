@@ -655,6 +655,63 @@ include "includes/header.php";
             font-size: 1.05rem;
         }
     }
+
+/* ══════════════════════════════════════
+   DARK MODE - Same as Dashboard
+══════════════════════════════════════ */
+[data-theme="dark"] .co-top-title { color: #e2e8f0; }
+[data-theme="dark"] .co-top-sub { color: #94a3b8; }
+[data-theme="dark"] .co-add-btn { background: linear-gradient(135deg, #1e293b, #0f172a); border-color: #334155; }
+
+[data-theme="dark"] .co-msg.success { background: #052e16; color: #6ee7b7; border-color: #059669; }
+[data-theme="dark"] .co-msg.danger { background: #3f0a0a; color: #fca5a5; border-color: #dc2626; }
+
+[data-theme="dark"] .co-stat { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .co-stat-num { color: #e2e8f0; }
+[data-theme="dark"] .co-stat-lbl { color: #64748b; }
+[data-theme="dark"] .co-stat.blue .co-stat-icon { background: #0f172a; color: #93c5fd; }
+[data-theme="dark"] .co-stat.amber .co-stat-icon { background: #1c1003; color: #fcd34d; }
+[data-theme="dark"] .co-stat.green .co-stat-icon { background: #052e16; color: #6ee7b7; }
+[data-theme="dark"] .co-stat.purple .co-stat-icon { background: #1e0a3f; color: #c4b5fd; }
+[data-theme="dark"] .co-stat.red .co-stat-icon { background: #3f0a0a; color: #fca5a5; }
+
+[data-theme="dark"] .co-card { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .co-card-head { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .co-card-head h5 { color: #e2e8f0; }
+[data-theme="dark"] .co-search-input { background: #0f172a; border-color: #334155; color: #e2e8f0; }
+[data-theme="dark"] .co-search-input:focus { border-color: #1456c8; }
+[data-theme="dark"] .co-search-input::placeholder { color: #475569; }
+
+[data-theme="dark"] .co-tbl thead tr { background: #0f172a; }
+[data-theme="dark"] .co-tbl thead th { background: #0f172a; color: #64748b; border-color: #334155; }
+[data-theme="dark"] .co-tbl tbody tr { border-color: #334155; }
+[data-theme="dark"] .co-tbl tbody tr:hover { background: #273549; }
+[data-theme="dark"] .co-tbl td { color: #cbd5e1; }
+
+[data-theme="dark"] .co-code { background: #0f172a; border-color: #334155; color: #93c5fd; }
+[data-theme="dark"] .co-name { color: #e2e8f0; }
+[data-theme="dark"] .co-desc { color: #64748b; }
+[data-theme="dark"] .co-no-desc { color: #475569; }
+[data-theme="dark"] .co-lecturer { color: #e2e8f0; }
+[data-theme="dark"] .co-lecturer-av { background: #0f172a; color: #93c5fd; }
+[data-theme="dark"] .co-no-lecturer { color: #fca5a5; }
+
+[data-theme="dark"] .co-enrolled.has { background: #0a1f2e; border-color: #0891b2; color: #67e8f9; }
+[data-theme="dark"] .co-enrolled.none { background: #0f172a; border-color: #334155; color: #64748b; }
+
+[data-theme="dark"] .co-act-btn { background: #1e293b; border-color: #334155; }
+[data-theme="dark"] .co-act-btn.edit:hover { background: #0f172a; border-color: #1456c8; color: #93c5fd; }
+[data-theme="dark"] .co-act-btn.enroll:hover { background: #052e16; border-color: #059669; color: #6ee7b7; }
+[data-theme="dark"] .co-act-btn.del:hover { background: #3f0a0a; border-color: #dc2626; color: #fca5a5; }
+[data-theme="dark"] .co-act-btn.locked { background: #0f172a; cursor: not-allowed; }
+[data-theme="dark"] .co-act-btn .fa-edit { color: #93c5fd; }
+[data-theme="dark"] .co-act-btn .fa-user-plus { color: #6ee7b7; }
+[data-theme="dark"] .co-act-btn .fa-trash-alt { color: #fca5a5; }
+[data-theme="dark"] .co-act-btn .fa-lock { color: #475569; }
+
+[data-theme="dark"] .co-empty { color: #64748b; }
+[data-theme="dark"] .co-no-results { color: #64748b; }
+[data-theme="dark"] .table-responsive::-webkit-scrollbar-thumb { background: #334155; }
 </style>
 
 
@@ -671,9 +728,11 @@ include "includes/header.php";
             <p class="co-top-sub">Manage courses, lecturers and enrollments</p>
         </div>
     </div>
-    <a href="add_course.php" class="co-add-btn">
-        <i class="fas fa-plus-circle"></i> New Course
-    </a>
+    <div style="display:flex;align-items:center;gap:10px;">
+        <a href="add_course.php" class="co-add-btn">
+            <i class="fas fa-plus-circle"></i> New Course
+        </a>
+    </div>
 </div>
 
 
