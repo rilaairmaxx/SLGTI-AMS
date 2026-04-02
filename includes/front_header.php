@@ -1,6 +1,10 @@
 <?php
 $page_title = "SLGTI Attendance Management System";
 $current_year = date("Y");
+
+// Detect HTTPS for secure cookie/settings
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off' ? 'https' : 'http';
+$site_url = $protocol . '://' . $_SERVER['HTTP_HOST'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -8,12 +12,27 @@ $current_year = date("Y");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SLGTI Attendance Management System - Track student attendance, manage courses, and monitor academic performance at Sri Lanka German Training Institute">
+    <meta name="keywords" content="SLGTI, attendance, management, system, Kilinochchi, technical, education">
+    <meta name="author" content="SLGTI">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="SLGTI Attendance Management System">
+    <meta property="og:description" content="Empowering students and staff at SLGTI with smarter attendance management">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<?php echo $site_url; ?>">
+    
     <title><?php echo $page_title; ?></title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="includes/css/front.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="Image/SLGTI.jpg">
+    <link rel="canonical" href="<?php echo $site_url; ?>">
 </head>
 
 <body>

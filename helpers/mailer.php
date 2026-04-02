@@ -10,7 +10,7 @@ define('MAILER_USE_SMTP',    true);
 define('SMTP_HOST',          'smtp-relay.brevo.com');
 define('SMTP_PORT',          587);
 define('SMTP_USERNAME',      'a658b8001@smtp-brevo.com');
-define('SMTP_PASSWORD',      'xsmtpsib-5cb979050a64fe24355cae263fcf889461c0ab693e92221ef00d4974e003aaca-92Eiqd8ASw79m3wi');
+define('SMTP_PASSWORD',      'xsmtpsib-5cb979050a64fe24355cae263fcf889461c0ab693e92221ef00d4974e003aaca-JL4AsXqcYIhdAptu');
 define('SMTP_ENCRYPTION',    'tls');
 define('SMTP_DEBUG',         0);
 

@@ -60,3 +60,12 @@ function updateActiveLink() {
 }
 
 window.addEventListener('scroll', updateActiveLink, { passive: true });
+
+/* ── Mobile menu touch improvements ── */
+if (mobileMenu) {
+    mobileMenu.addEventListener('touchmove', function(e) {
+        if (e.target.tagName !== 'A') {
+            e.preventDefault();
+        }
+    }, { passive: false });
+}
